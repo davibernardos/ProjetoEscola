@@ -2,8 +2,10 @@
 package projetoescola.model;
 
  import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-
+@Entity
 public class Estudante extends Pessoa {
 
     public Estudante() {
@@ -18,6 +20,7 @@ public class Estudante extends Pessoa {
         this.estadoCivil = estadoCivil;
     }
     
+    @Id
     private long codigo;
     private int matricula;
     private Date dataDaMatricula;
