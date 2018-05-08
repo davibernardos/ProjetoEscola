@@ -10,7 +10,7 @@ public class ProjetoEscola extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/projeto/view/FXMLDocument.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/projetoescola/view/FXMLDocument.fxml"));
         
         Scene scene = new Scene(root);
         
