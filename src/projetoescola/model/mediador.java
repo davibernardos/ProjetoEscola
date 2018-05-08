@@ -1,7 +1,7 @@
 
 package projetoescola.model;
 
-public class mediador {
+public class mediador extends Pessoa{
     
     private long codigo;
     private String titulacao;
