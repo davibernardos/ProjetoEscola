@@ -1,4 +1,4 @@
-package projetoescola;
+package projetoescolar;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
