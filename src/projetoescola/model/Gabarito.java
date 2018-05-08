@@ -1,8 +1,10 @@
 
 package projetoescola.model;
 
+import projetoescola.interfaces.GabaritosMetodos;
 
-public class Gabarito {
+
+public class Gabarito implements GabaritosMetodos{
 
     public Gabarito() {
     }
@@ -90,5 +92,40 @@ public class Gabarito {
         this.resultados = resultados;
     }
     private String[] resultados;
+
+    @Override
+    public void testaCompilacao() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void variaveisEsperadas() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void funcoesEsperadas() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void lacosEsperados() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void tempoDeExecucao() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void complexidadeDoAlgoritmo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void resultadosEsperados() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
