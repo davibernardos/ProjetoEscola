@@ -105,7 +105,7 @@ public class Gabarito implements GabaritosMetodos{
 
     @Override
     public void funcoesEsperadas() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override
