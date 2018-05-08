@@ -3,7 +3,7 @@ package projetoescola.model;
 
  import java.util.Date;
 
-public class Estudante {
+public class Estudante extends Pessoa {
 
     public Estudante() {
     }
