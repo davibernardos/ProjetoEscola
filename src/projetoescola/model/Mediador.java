@@ -8,25 +8,13 @@ import javax.persistence.Id;
 
 @Entity
 public class Mediador extends Pessoa implements Serializable {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long codigo;
+    
     private String titulacao;
     private String area;
 
     public Mediador(long codigo, String titulacao, String area) {
-        this.codigo = codigo;
         this.titulacao = titulacao;
         this.area = area;
-    }
-
-    public long getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(long codigo) {
-        this.codigo = codigo;
     }
 
     public String getTitulacao() {
@@ -47,7 +35,7 @@ public class Mediador extends Pessoa implements Serializable {
 
     @Override
     public String toString() {
-        return "mediador{" + "codigo=" + codigo + ", titulacao=" + titulacao + ", area=" + area + '}';
+        return "mediador{" + ", titulacao=" + titulacao + ", area=" + area + '}';
     }
 
 }

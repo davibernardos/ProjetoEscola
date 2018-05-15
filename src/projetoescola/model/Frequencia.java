@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class frequencia implements Serializable {
+public class Frequencia implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -16,7 +16,7 @@ public class frequencia implements Serializable {
     private Date dia;
     private boolean presente;
 
-    public frequencia(long codigo, Date dia, boolean presente) {
+    public Frequencia(long codigo, Date dia, boolean presente) {
         this.codigo = codigo;
         this.dia = dia;
         this.presente = presente;

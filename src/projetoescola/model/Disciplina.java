@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class disciplina implements Serializable {
+public class Disciplina implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -45,7 +45,7 @@ public class disciplina implements Serializable {
         this.cargaHoraria = cargaHoraria;
     }
 
-    public disciplina(long codigo, Date dataInicio, int cargaHoraria) {
+    public Disciplina(long codigo, Date dataInicio, int cargaHoraria) {
         this.codigo = codigo;
         this.dataInicio = dataInicio;
         this.cargaHoraria = cargaHoraria;
