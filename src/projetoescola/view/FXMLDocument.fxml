@@ -87,7 +87,7 @@
             </VBox>
             <ImageView fitHeight="255.0" fitWidth="222.0">
                <image>
-                  <Image url="@../../../../../../Desktop/IFSC_logo_vertical.png" />
+                  <Image url="/imagens/logo.png" />
                </image>
             </ImageView>
          </children>
