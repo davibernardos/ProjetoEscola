@@ -14,7 +14,7 @@
    <top>
       <HBox prefHeight="78.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" prefHeight="45.0" prefWidth="210.0" text="Cadastro de Pessoa" textAlignment="CENTER">
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="210.0" text="Cadastro de Estudante" textAlignment="CENTER">
                <font>
                   <Font size="19.0" />
                </font>
