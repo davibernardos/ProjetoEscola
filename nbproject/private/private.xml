@@ -2,13 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-<<<<<<< HEAD
-        <group/>
-=======
         <group>
-            <file>file:/home/davi_wollmann/ProjetoEscola/src/projetoescola/model/Gabarito.java</file>
-            <file>file:/home/davi_wollmann/ProjetoEscola/src/projetoescola/view/FXMLDocument.fxml</file>
+            <file>file:/C:/Users/Aluno/Documents/GitHub/ProjetoEscola/src/projetoescola/model/Telefone.java</file>
+            <file>file:/C:/Users/Aluno/Documents/GitHub/ProjetoEscola/src/projetoescola/view/FXMLDocument.fxml</file>
+            <file>file:/C:/Users/Aluno/Documents/GitHub/ProjetoEscola/src/projetoescola/controller/FXMLDocumentController.java</file>
+            <file>file:/C:/Users/Aluno/Documents/GitHub/ProjetoEscola/src/projetoescola/controller/MediadorController.java</file>
+            <file>file:/C:/Users/Aluno/Documents/GitHub/ProjetoEscola/src/projetoescola/model/Mediador.java</file>
         </group>
->>>>>>> 27143cc76ceb88c44cdbcc65bf83959a2d115f5c
     </open-files>
 </project-private>

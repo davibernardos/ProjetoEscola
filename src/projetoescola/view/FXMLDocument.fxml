@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -10,9 +11,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <HBox prefHeight="78.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <HBox prefHeight="62.0" prefWidth="627.0" BorderPane.alignment="CENTER">
          <children>
             <Label alignment="CENTER" prefHeight="45.0" prefWidth="210.0" text="Cadastro de Estudante" textAlignment="CENTER">
                <font>
@@ -36,62 +37,109 @@
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="0.0" prefWidth="86.0" text="Nome: " />
-                        <TextField fx:id="txtNome" prefHeight="25.0" prefWidth="149.0" />
+                        <TextField prefHeight="25.0" prefWidth="149.0" />
                      </children>
                   </HBox>
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="17.0" prefWidth="86.0" text="Nascimento: " />
-                        <TextField fx:id="txtNascimento" prefHeight="25.0" prefWidth="149.0" />
+                        <TextField prefHeight="25.0" prefWidth="149.0" />
                      </children>
                   </HBox>
                   <HBox prefHeight="28.0" prefWidth="360.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="CPF: " />
-                        <TextField fx:id="txtCPF" />
+                        <TextField />
                      </children>
                   </HBox>
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="RG: " />
-                        <TextField fx:id="txtHH" />
+                        <TextField />
                      </children>
                   </HBox>
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="Sexo:" />
-                        <TextField fx:id="txtSexo" />
+                        <RadioButton mnemonicParsing="false" text="Masc   " />
+                        <RadioButton mnemonicParsing="false" text="Fem   " />
+                        <RadioButton mnemonicParsing="false" text="Outros" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="30.0" prefWidth="323.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="86.0" text="Estado Civil:" />
+                        <RadioButton mnemonicParsing="false" text="Casado   " />
+                        <RadioButton mnemonicParsing="false" text="Solteiro   " />
+                        <RadioButton mnemonicParsing="false" text="Outros   " />
                      </children>
                   </HBox>
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="Nome do Pai:" />
-                        <TextField fx:id="txtNomePai" />
+                        <TextField />
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="252.0" prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="Nome da Mãe:" />
-                        <TextField fx:id="txtNomeMae" />
+                        <TextField />
                      </children>
                   </HBox>
-                  <HBox layoutX="10.0" layoutY="265.0" prefHeight="28.0" prefWidth="500.0">
+                  <HBox layoutX="10.0" layoutY="178.0" prefHeight="28.0" prefWidth="500.0">
                      <children>
-                        <Label prefHeight="16.0" prefWidth="86.0" text="Estado Civil:" />
-                        <TextField fx:id="txtEstadoCivil" />
+                        <Label prefHeight="16.0" prefWidth="86.0" text="Telefone" />
+                        <RadioButton mnemonicParsing="false" text="Celular    " />
+                        <RadioButton mnemonicParsing="false" prefHeight="17.0" prefWidth="93.0" text="Residencial" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="252.0" prefHeight="28.0" prefWidth="500.0">
+                     <children>
+                        <Label prefHeight="16.0" prefWidth="86.0" text="Nº Telefone" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="280.0" prefHeight="27.0" prefWidth="341.0">
+                     <children>
+                        <Label prefHeight="16.0" prefWidth="86.0" text="Estado:" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="308.0" prefHeight="28.0" prefWidth="500.0">
+                     <children>
+                        <Label prefHeight="16.0" prefWidth="86.0" text="Cidade:" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="280.0" prefHeight="28.0" prefWidth="500.0">
+                     <children>
+                        <Label prefHeight="16.0" prefWidth="86.0" text="Rua:" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="280.0" prefHeight="28.0" prefWidth="500.0">
+                     <children>
+                        <Label prefHeight="16.0" prefWidth="86.0" text="CEP:" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="280.0" prefHeight="28.0" prefWidth="500.0">
+                     <children>
+                        <Label prefHeight="16.0" prefWidth="86.0" text="N° :" />
+                        <TextField />
                      </children>
                   </HBox>
                   <HBox prefHeight="46.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="88.0" />
-                        <Button fx:id="btnEnviar" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Enviar" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Enviar" />
                         <Label prefHeight="17.0" prefWidth="26.0" />
-                        <Button fx:id="btnReset" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Resetar" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Resetar" />
                      </children>
                   </HBox>
                </children>
             </VBox>
-            <ImageView fitHeight="255.0" fitWidth="222.0">
+            <ImageView fitHeight="335.0" fitWidth="240.0">
                <image>
                   <Image url="@../../imagens/logo.png" />
                </image>

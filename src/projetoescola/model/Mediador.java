@@ -6,7 +6,7 @@ import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE) 
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Mediador extends Pessoa implements Serializable {
     
     private String titulacao;
