@@ -7,14 +7,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class atividade implements Serializable {
+public class Atividade implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String descricao;
 
-    public atividade(String descricao) {
+    public Atividade(String descricao) {
         this.descricao = descricao;
     }
 

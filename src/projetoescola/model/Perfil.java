@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class perfil implements Serializable {
+public class Perfil implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -16,7 +16,7 @@ public class perfil implements Serializable {
     private double otimizacao;
     private double indiceParcial;
 
-    public perfil(double condicionais, double lacos, double otimizacao, double indiceParcial) {
+    public Perfil(double condicionais, double lacos, double otimizacao, double indiceParcial) {
         this.condicionais = condicionais;
         this.lacos = lacos;
         this.otimizacao = otimizacao;

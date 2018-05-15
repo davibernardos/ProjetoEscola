@@ -8,14 +8,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class matricula implements Serializable {
+public class Matricula implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo;
     private Date dataDaMatricula;
 
-    public matricula(long codigo, Date dataDaMatricula) {
+    public Matricula(long codigo, Date dataDaMatricula) {
         this.codigo = codigo;
         this.dataDaMatricula = dataDaMatricula;
     }

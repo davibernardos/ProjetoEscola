@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class telefone implements Serializable {
+public class Telefone implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -15,7 +15,7 @@ public class telefone implements Serializable {
     private String tipo;
     private int numero;
 
-    public telefone(long codigo, String tipo, int numero) {
+    public Telefone(long codigo, String tipo, int numero) {
         this.codigo = codigo;
         this.tipo = tipo;
         this.numero = numero;
