@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1">
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
@@ -20,14 +20,14 @@
             </HBox>
             <HBox prefHeight="28.0" prefWidth="500.0">
                <children>
-                  <Label prefHeight="16.0" prefWidth="86.0" text="Nome: " />
-                  <TextField />
+                  <Label prefHeight="0.0" prefWidth="86.0" text="Nome: " />
+                  <TextField prefHeight="25.0" prefWidth="149.0" />
                </children>
             </HBox>
             <HBox prefHeight="28.0" prefWidth="500.0">
                <children>
-                  <Label text="Nascimento: " />
-                  <TextField />
+                  <Label prefHeight="17.0" prefWidth="86.0" text="Nascimento: " />
+                  <TextField prefHeight="25.0" prefWidth="149.0" />
                </children>
             </HBox>
             <HBox prefHeight="28.0" prefWidth="500.0">
@@ -57,7 +57,9 @@
             <HBox prefHeight="46.0" prefWidth="500.0">
                <children>
                   <Label prefHeight="16.0" prefWidth="88.0" />
-                  <Button mnemonicParsing="false" text="Enviar" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Enviar" />
+                  <Label prefHeight="17.0" prefWidth="26.0" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Resetar" />
                </children>
             </HBox>
          </children>
