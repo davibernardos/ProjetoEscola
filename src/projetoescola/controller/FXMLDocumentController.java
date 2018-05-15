@@ -35,7 +35,13 @@ public class FXMLDocumentController implements Initializable {
     private TextField txtRG;
     
     @FXML
-    private TextField txtSexo;
+    private RadioButton rbtnSexoM;
+    
+    @FXML
+    private RadioButton rbtnSexoF;
+    
+    @FXML
+    private RadioButton rbtnSexoO;
     
     @FXML
     private TextField txtNomePai;
@@ -43,8 +49,32 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TextField txtNomeMae;
     
-    @FXML
+    @FXML   
     private TextField txtEstadoCivil;
+    
+    @FXML
+    private RadioButton rbtnFoneCel;
+    
+    @FXML
+    private RadioButton rbtnFoneTel;
+    
+    @FXML
+    private TextField txtNumTelefone;
+    
+    @FXML
+    private TextField txtEstado;
+    
+    @FXML
+    private TextField txtCidade;
+    
+    @FXML
+    private TextField txtRua;
+    
+    @FXML
+    private TextField txtCEP;
+    
+    @FXML
+    private TextField txtNumCasa;
     
     @FXML
     private Button btnEnviar;
