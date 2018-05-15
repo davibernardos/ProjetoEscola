@@ -1,14 +1,23 @@
 package projetoescola.model;
 
 import java.io.Serializable;
+<<<<<<< HEAD
 import java.util.Date;
+=======
+ import java.util.Date;
+>>>>>>> 0cef50d546084a70a8dfaa46a9c99fa42fa93df4
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+<<<<<<< HEAD
 @Entity
 public class Estudante extends Pessoa implements Serializable{
+=======
+
+public class Estudante extends Pessoa {
+>>>>>>> 0cef50d546084a70a8dfaa46a9c99fa42fa93df4
 
     public Estudante() {
     }
@@ -21,9 +30,14 @@ public class Estudante extends Pessoa implements Serializable{
         this.nomeDaMae = nomeDaMae;
         this.estadoCivil = estadoCivil;
     }
+<<<<<<< HEAD
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+=======
+    
+
+>>>>>>> 0cef50d546084a70a8dfaa46a9c99fa42fa93df4
     private long codigo;
     private int matricula;
     private Date dataDaMatricula;
