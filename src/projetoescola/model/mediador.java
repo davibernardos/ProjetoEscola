@@ -1,13 +1,21 @@
-
 package projetoescola.model;
 
-public class mediador extends Pessoa{
-    
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Mediador extends Pessoa implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo;
     private String titulacao;
     private String area;
 
-    public mediador(long codigo, String titulacao, String area) {
+    public Mediador(long codigo, String titulacao, String area) {
         this.codigo = codigo;
         this.titulacao = titulacao;
         this.area = area;
@@ -41,7 +49,5 @@ public class mediador extends Pessoa{
     public String toString() {
         return "mediador{" + "codigo=" + codigo + ", titulacao=" + titulacao + ", area=" + area + '}';
     }
-    
-    
-    
+
 }

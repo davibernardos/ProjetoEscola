@@ -5,9 +5,17 @@
  */
 package projetoescola.model;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-public class Escola {
-    
+@Entity
+public class Escola implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo;
     private String nome;
     private int cnpj;
@@ -45,7 +53,4 @@ public class Escola {
         this.cnpj = cnpj;
     }
 
-    
-    
-    
 }

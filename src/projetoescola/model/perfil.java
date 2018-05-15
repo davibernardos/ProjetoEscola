@@ -1,8 +1,16 @@
 package projetoescola.model;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-public class perfil {
-    
+@Entity
+public class perfil implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private double condicionais;
     private double lacos;
     private double otimizacao;
@@ -51,7 +59,5 @@ public class perfil {
     public String toString() {
         return "perfil{" + "condicionais=" + condicionais + ", lacos=" + lacos + ", otimizacao=" + otimizacao + ", indiceParcial=" + indiceParcial + '}';
     }
-    
-    
-    
+
 }

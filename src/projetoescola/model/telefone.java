@@ -1,7 +1,16 @@
 package projetoescola.model;
 
-public class telefone {
-    
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class telefone implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo;
     private String tipo;
     private int numero;
@@ -40,7 +49,5 @@ public class telefone {
     public String toString() {
         return "telefone{" + "codigo=" + codigo + ", tipo=" + tipo + ", numero=" + numero + '}';
     }
-    
-    
-    
+
 }

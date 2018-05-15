@@ -1,10 +1,18 @@
-
 package projetoescola.model;
 
+import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-public class Pessoa {
+@Entity
+public class Pessoa implements Serializable {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private String nome;
     private Date dataDeNascimento;
     private int cpf;
@@ -15,6 +23,7 @@ public class Pessoa {
     private Date dataDeCadastro;
     private boolean ativo;
     
+
     public Pessoa() {
     }
 
@@ -106,6 +115,5 @@ public class Pessoa {
     public String toString() {
         return "Pessoa{" + "nome=" + nome + ", dataDeNascimento=" + dataDeNascimento + ", cpf=" + cpf + ", rg=" + rg + ", sexo=" + sexo + ", email=" + email + ", foto=" + foto + ", dataDeCadastro=" + dataDeCadastro + ", ativo=" + ativo + '}';
     }
-    
-    
+
 }
