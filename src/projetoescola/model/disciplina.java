@@ -1,13 +1,19 @@
-
 package projetoescola.model;
 
+import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
+public class disciplina implements Serializable {
 
-public class disciplina {
-   
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo;
-    private Date dataInicio; 
+    private Date dataInicio;
     private int cargaHoraria;
 
     @Override

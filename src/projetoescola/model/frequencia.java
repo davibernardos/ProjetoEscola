@@ -1,10 +1,17 @@
-
 package projetoescola.model;
 
+import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-public class frequencia {
-    
+@Entity
+public class frequencia implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo;
     private Date dia;
     private boolean presente;
@@ -43,6 +50,5 @@ public class frequencia {
     public String toString() {
         return "frequencia{" + "codigo=" + codigo + ", dia=" + dia + ", presente=" + presente + '}';
     }
-    
-    
+
 }

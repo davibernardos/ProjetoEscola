@@ -1,10 +1,17 @@
 package projetoescola.model;
 
+import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
+public class matricula implements Serializable {
 
-public class matricula {
-    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo;
     private Date dataDaMatricula;
 
@@ -33,7 +40,5 @@ public class matricula {
     public String toString() {
         return "matricula{" + "codigo=" + codigo + ", dataDaMatricula=" + dataDaMatricula + '}';
     }
-    
-    
-    
+
 }

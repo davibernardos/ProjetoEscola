@@ -1,10 +1,12 @@
-
 package projetoescola.model;
 
+import java.io.Serializable;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import projetoescola.interfaces.GabaritosMetodos;
 
-
-public class Gabarito implements GabaritosMetodos{
+public class Gabarito implements GabaritosMetodos, Serializable {
 
     public Gabarito() {
     }
@@ -19,7 +21,9 @@ public class Gabarito implements GabaritosMetodos{
         this.entrada = entrada;
         this.resultados = resultados;
     }
-    
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
     private boolean compila;
     private int numeroDeVariaveis;
     private int numeroDeFuncoes;
@@ -105,7 +109,7 @@ public class Gabarito implements GabaritosMetodos{
 
     @Override
     public void funcoesEsperadas() {
-        
+
     }
 
     @Override
@@ -127,5 +131,5 @@ public class Gabarito implements GabaritosMetodos{
     public void resultadosEsperados() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }
