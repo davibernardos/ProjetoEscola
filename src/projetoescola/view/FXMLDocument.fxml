@@ -14,7 +14,7 @@
    <top>
       <HBox prefHeight="78.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" prefHeight="45.0" prefWidth="210.0" text="Cadastro de Pessoa" textAlignment="CENTER">
+            <Label alignment="CENTER" prefHeight="45.0" prefWidth="210.0" text="Cadastro de Estudante" textAlignment="CENTER">
                <font>
                   <Font size="19.0" />
                </font>
@@ -71,7 +71,19 @@
                   </HBox>
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
-                        <Label prefHeight="16.0" prefWidth="86.0" text="Email:" />
+                        <Label prefHeight="16.0" prefWidth="86.0" text="Nome do Pai:" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="252.0" prefHeight="28.0" prefWidth="500.0">
+                     <children>
+                        <Label prefHeight="16.0" prefWidth="86.0" text="Nome da Mãe:" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="265.0" prefHeight="28.0" prefWidth="500.0">
+                     <children>
+                        <Label prefHeight="16.0" prefWidth="86.0" text="Estado Civil:" />
                         <TextField />
                      </children>
                   </HBox>
@@ -87,7 +99,7 @@
             </VBox>
             <ImageView fitHeight="255.0" fitWidth="222.0">
                <image>
-                  <Image url="/imagens/logo.png" />
+                  <Image url="@../../imagens/logo.png" />
                </image>
             </ImageView>
          </children>
