@@ -18,10 +18,7 @@ import javafx.scene.control.TextField;
  * @author Aluno
  */
 public class FXMLDocumentController implements Initializable {
-    
-    @FXML
-    private TextField txtCodigo;
-    
+
     @FXML
     private TextField txtNome;
     
@@ -90,5 +87,21 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     public void salvarDados(){
         System.out.println("CONTROLLER TESTE");
+    }
+    
+    @FXML
+    public void resetarDados(){
+        txtCEP.setText("");
+        txtCPF.setText("");
+        txtCidade.setText("");
+        txtEstado.setText("");
+        txtNascimento.setText("");
+        txtNome.setText("");
+        txtNomeMae.setText("");
+        txtNomePai.setText("");
+        txtNumCasa.setText("");
+        txtNumTelefone.setText("");
+        txtRG.setText("");
+        txtRua.setText("");
     }
 }

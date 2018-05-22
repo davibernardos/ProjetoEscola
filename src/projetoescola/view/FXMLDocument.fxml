@@ -37,25 +37,25 @@
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="0.0" prefWidth="86.0" text="Nome: " />
-                        <TextField prefHeight="25.0" prefWidth="149.0" />
+                        <TextField fx:id="txtNome" prefHeight="25.0" prefWidth="149.0" />
                      </children>
                   </HBox>
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="17.0" prefWidth="86.0" text="Nascimento: " />
-                        <TextField prefHeight="25.0" prefWidth="149.0" />
+                        <TextField fx:id="txtNascimento" prefHeight="25.0" prefWidth="149.0" />
                      </children>
                   </HBox>
                   <HBox prefHeight="28.0" prefWidth="360.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="CPF: " />
-                        <TextField />
+                        <TextField fx:id="txtCPF" />
                      </children>
                   </HBox>
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="RG: " />
-                        <TextField />
+                        <TextField fx:id="txtRG" />
                      </children>
                   </HBox>
                   <HBox prefHeight="28.0" prefWidth="500.0">
@@ -77,13 +77,13 @@
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="Nome do Pai:" />
-                        <TextField />
+                        <TextField fx:id="txtNomePai" />
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="252.0" prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="Nome da Mãe:" />
-                        <TextField />
+                        <TextField fx:id="txtNomeMae" />
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="178.0" prefHeight="28.0" prefWidth="500.0">
@@ -96,37 +96,37 @@
                   <HBox layoutX="10.0" layoutY="252.0" prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="Nº Telefone" />
-                        <TextField />
+                        <TextField fx:id="txtNumTelefone" />
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="280.0" prefHeight="27.0" prefWidth="341.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="Estado:" />
-                        <TextField />
+                        <TextField fx:id="txtEstado" />
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="308.0" prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="Cidade:" />
-                        <TextField />
+                        <TextField fx:id="txtCidade" />
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="280.0" prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="Rua:" />
-                        <TextField />
+                        <TextField fx:id="txtRua" />
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="280.0" prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="CEP:" />
-                        <TextField />
+                        <TextField fx:id="txtCEP" />
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="280.0" prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="N° :" />
-                        <TextField />
+                        <TextField fx:id="txtNumCasa" />
                      </children>
                   </HBox>
                   <HBox prefHeight="46.0" prefWidth="500.0">
@@ -134,7 +134,7 @@
                         <Label prefHeight="16.0" prefWidth="88.0" />
                         <Button fx:id="btnEnviar" mnemonicParsing="false" onAction="#salvarDados" prefHeight="25.0" prefWidth="61.0" text="Enviar" />
                         <Label prefHeight="17.0" prefWidth="26.0" />
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Resetar" />
+                        <Button fx:id="btnReset" mnemonicParsing="false" onAction="#resetarDados" prefHeight="25.0" prefWidth="61.0" text="Resetar" />
                      </children>
                   </HBox>
                </children>
