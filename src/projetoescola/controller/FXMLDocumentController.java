@@ -21,10 +21,7 @@ import projetoescola.model.Endereco;
  * @author Aluno
  */
 public class FXMLDocumentController implements Initializable {
-    
-    @FXML
-    private TextField txtCodigo;
-    
+
     @FXML
     private TextField txtNome;
     
@@ -101,5 +98,21 @@ public class FXMLDocumentController implements Initializable {
         
         EnderecoJpaController ejc = new EnderecoJpaController(EnderecoJpaController.getEM());
         ejc.create(end);
+    }
+    
+    @FXML
+    public void resetarDados(){
+        txtCEP.setText("");
+        txtCPF.setText("");
+        txtCidade.setText("");
+        txtEstado.setText("");
+        txtNascimento.setText("");
+        txtNome.setText("");
+        txtNomeMae.setText("");
+        txtNomePai.setText("");
+        txtNumCasa.setText("");
+        txtNumTelefone.setText("");
+        txtRG.setText("");
+        txtRua.setText("");
     }
 }
