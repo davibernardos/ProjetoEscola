@@ -66,6 +66,9 @@ public class FXMLDocumentController implements Initializable {
     private TextField txtNumTelefone;
     
     @FXML
+    private TextField txtEmail;
+    
+    @FXML
     private TextField txtEstado;
     
     @FXML
@@ -86,12 +89,32 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Button btnReset;
     
+    @FXML
+    private RadioButton rbtnCasado;
+    
+    @FXML
+    private RadioButton rbtnSolteiro;
+    
+    @FXML
+    private RadioButton rbtnOutros;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        ToggleGroup grupo = new ToggleGroup();
-        rbtnSexoF.setToggleGroup(grupo);
-        rbtnSexoM.setToggleGroup(grupo);
-        rbtnSexoO.setToggleGroup(grupo);
+        ToggleGroup sexo = new ToggleGroup();
+        rbtnSexoF.setToggleGroup(sexo);
+        rbtnSexoM.setToggleGroup(sexo);
+        rbtnSexoO.setToggleGroup(sexo);
+        
+        ToggleGroup fone = new ToggleGroup();
+        rbtnFoneCel.setToggleGroup(fone);
+        rbtnFoneTel.setToggleGroup(fone);
+        
+        ToggleGroup estadoCivil = new ToggleGroup();
+        rbtnCasado.setToggleGroup(estadoCivil);
+        rbtnSolteiro.setToggleGroup(estadoCivil);
+        rbtnOutros.setToggleGroup(estadoCivil);
+        
+        
     }    
     
     @FXML
@@ -135,5 +158,13 @@ public class FXMLDocumentController implements Initializable {
         txtNumTelefone.setText("");
         txtRG.setText("");
         txtRua.setText("");
+        rbtnCasado.setSelected(false);
+        rbtnSolteiro.setSelected(false);
+        rbtnOutros.setSelected(false);
+        rbtnFoneCel.setSelected(false);
+        rbtnFoneTel.setSelected(false);
+        rbtnSexoF.setSelected(false);
+        rbtnSexoM.setSelected(false);
+        rbtnSexoO.setSelected(false);
     }
 }
