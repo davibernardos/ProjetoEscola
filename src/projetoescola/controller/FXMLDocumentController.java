@@ -156,6 +156,7 @@ public class FXMLDocumentController implements Initializable {
         txtNomePai.setText("");
         txtNumCasa.setText("");
         txtNumTelefone.setText("");
+        txtEmail.setText("");
         txtRG.setText("");
         txtRua.setText("");
         rbtnCasado.setSelected(false);

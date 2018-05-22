@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoescola.controller.FXMLDocumentController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoescola.controller.FXMLDocumentController">
    <top>
       <HBox prefHeight="62.0" prefWidth="627.0" BorderPane.alignment="CENTER">
          <children>
@@ -96,7 +96,7 @@
                   <HBox prefHeight="28.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="86.0" text="Nº Telefone" />
-                        <TextField fx:id="txtNumTelefone1" />
+                        <TextField fx:id="txtNumTelefone" />
                      </children>
                   </HBox>
                   <HBox layoutX="10.0" layoutY="252.0" prefHeight="28.0" prefWidth="500.0">
