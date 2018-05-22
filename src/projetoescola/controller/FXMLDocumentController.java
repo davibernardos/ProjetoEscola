@@ -137,5 +137,13 @@ public class FXMLDocumentController implements Initializable {
         txtNumTelefone.setText("");
         txtRG.setText("");
         txtRua.setText("");
+        rbtnCasado.setSelected(false);
+        rbtnSolteiro.setSelected(false);
+        rbtnOutros.setSelected(false);
+        rbtnFoneCel.setSelected(false);
+        rbtnFoneTel.setSelected(false);
+        rbtnSexoF.setSelected(false);
+        rbtnSexoM.setSelected(false);
+        rbtnSexoO.setSelected(false);
     }
 }
