@@ -24,7 +24,7 @@ import projetoescola.model.Pessoa;
  *
  * @author Aluno
  */
-public class FXMLDocumentController implements Initializable {
+public class EstudanteController implements Initializable {
 
     @FXML
     private TextField txtNome;
