@@ -62,6 +62,9 @@ public class FXMLDocumentController implements Initializable {
     private TextField txtNumTelefone;
     
     @FXML
+    private TextField txtEmail;
+    
+    @FXML
     private TextField txtEstado;
     
     @FXML
