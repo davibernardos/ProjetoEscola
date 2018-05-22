@@ -84,7 +84,10 @@ public class FXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
+        ToggleGroup grupo = new ToggleGroup();
+        rbtnSexoF.setToggleGroup(grupo);
+        rbtnSexoM.setToggleGroup(grupo);
+        rbtnSexoO.setToggleGroup(grupo);
     }    
     
     @FXML
