@@ -41,9 +41,6 @@ public class FXMLDocumentController implements Initializable {
     private RadioButton rbtnSexoF;
     
     @FXML
-    private RadioButton rbtnSexoO;
-    
-    @FXML
     private TextField txtNomePai;
     
     @FXML
