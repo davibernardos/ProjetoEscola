@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoescola/controller/FXMLDocumentController.java">
    <top>
       <HBox prefHeight="62.0" prefWidth="627.0" BorderPane.alignment="CENTER">
          <children>
@@ -132,7 +132,7 @@
                   <HBox prefHeight="46.0" prefWidth="500.0">
                      <children>
                         <Label prefHeight="16.0" prefWidth="88.0" />
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Enviar" />
+                        <Button fx:id="btnEnviar" mnemonicParsing="false" onAction="#salvarDados" prefHeight="25.0" prefWidth="61.0" text="Enviar" />
                         <Label prefHeight="17.0" prefWidth="26.0" />
                         <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="Resetar" />
                      </children>
