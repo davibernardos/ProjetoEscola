@@ -12,6 +12,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.TextField;
+import javax.persistence.EntityManagerFactory;
+import projetoescola.dao.EnderecoJpaController;
+import projetoescola.model.Endereco;
 
 /**
  *
@@ -83,7 +86,15 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     public void salvarDados(){
-        System.out.println("CONTROLLER TESTE");
+        Endereco end = new Endereco();
+        end.setRua(txtRua.getText());
+        end.setNumero(txtNumCasa.getText());
+        end.setCidade(txtCidade.getText());
+        end.setEstado(txtEstado.getText());
+        end.setCep(txtCEP.getText());
+        
+        EnderecoJpaController ejc = new EnderecoJpaController(EnderecoJpaController.getEM());
+        ejc.create(end);
     }
     
     @FXML
