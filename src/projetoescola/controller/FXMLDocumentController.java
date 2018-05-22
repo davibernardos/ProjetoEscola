@@ -87,8 +87,8 @@ public class FXMLDocumentController implements Initializable {
         
     }    
     
-//    @FXML
-//    public void salvarDados(){
-//        System.out.println("CONTROLLER TESTE");
-//    }
+    @FXML
+    public void salvarDados(){
+        System.out.println("CONTROLLER TESTE");
+    }
 }
