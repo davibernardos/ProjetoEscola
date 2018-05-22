@@ -15,20 +15,20 @@ public class Pessoa implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String nome;
-    private Date dataDeNascimento;
+    private String dataDeNascimento;
     private int cpf;
     private int rg;
     private char sexo;
     private String email;
     private String foto;
-    private Date dataDeCadastro;
+    private String dataDeCadastro;
     private boolean ativo;
     
 
     public Pessoa() {
     }
 
-    public Pessoa(String nome, Date dataDeNascimento, int cpf, int rg, char sexo, String email, String foto, Date dataDeCadastro, boolean ativo) {
+    public Pessoa(String nome, String dataDeNascimento, int cpf, int rg, char sexo, String email, String foto, String dataDeCadastro, boolean ativo) {
         this.nome = nome;
         this.dataDeNascimento = dataDeNascimento;
         this.cpf = cpf;
@@ -48,11 +48,11 @@ public class Pessoa implements Serializable {
         this.nome = nome;
     }
 
-    public Date getDataDeNascimento() {
+    public String getDataDeNascimento() {
         return dataDeNascimento;
     }
 
-    public void setDataDeNascimento(Date dataDeNascimento) {
+    public void setDataDeNascimento(String dataDeNascimento) {
         this.dataDeNascimento = dataDeNascimento;
     }
 
@@ -96,11 +96,11 @@ public class Pessoa implements Serializable {
         this.foto = foto;
     }
 
-    public Date getDataDeCadastro() {
+    public String getDataDeCadastro() {
         return dataDeCadastro;
     }
 
-    public void setDataDeCadastro(Date dataDeCadastro) {
+    public void setDataDeCadastro(String dataDeCadastro) {
         this.dataDeCadastro = dataDeCadastro;
     }
 

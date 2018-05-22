@@ -6,6 +6,7 @@
 package projetoescola.controller;
 
 import java.net.URL;
+import java.util.Date;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,7 +15,10 @@ import javafx.scene.control.*;
 import javafx.scene.control.TextField;
 import javax.persistence.EntityManagerFactory;
 import projetoescola.dao.EnderecoJpaController;
+import projetoescola.dao.EstudanteJpaController;
 import projetoescola.model.Endereco;
+import projetoescola.model.Estudante;
+import projetoescola.model.Pessoa;
 
 /**
  *
@@ -39,6 +43,9 @@ public class FXMLDocumentController implements Initializable {
     
     @FXML
     private RadioButton rbtnSexoF;
+    
+    @FXML
+    private RadioButton rbtnSexoO;
     
     @FXML
     private TextField txtNomePai;
@@ -98,6 +105,20 @@ public class FXMLDocumentController implements Initializable {
         
         EnderecoJpaController ejc = new EnderecoJpaController(EnderecoJpaController.getEM());
         ejc.create(end);
+        
+        Estudante pes = new Estudante();
+        pes.setNome(txtNome.getText());
+        pes.setDataDeNascimento(txtNascimento.getText());
+        pes.setCpf(Integer.parseInt(txtCPF.getText()));
+        pes.setRg(Integer.parseInt(txtRG.getText()));
+        pes.setEmail("IMPLEMENTAR CAMPO");
+        pes.setFoto("IMPLEMENTAR CAMPO");
+        pes.setDataDeCadastro("PEGAR DO SISTEMA");
+        pes.setAtivo(true);
+        pes.setNomeDoPai(txtNomePai.getText());
+        pes.setNomeDaMae(txtNomeMae.getText());
+        
+        //EstudanteJpaController estjc = new EstudanteJpaController(EnderecoJpaController.getEM());
     }
     
     @FXML
